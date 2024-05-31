@@ -22,8 +22,7 @@ class _IsolateState extends State<Isolate> {
 
   void startIsolateLoop() async {
     _receivePort = ReceivePort();
-	_isolateLoop = await Isolate.spawn(mainLoop,
-	_receivePort.sendPort);
+	_isolateLoop = await Isolate.spawn(mainLoop, _receivePort.sendPort);
     _receivePort.listen((message) {
       setState(() {});
       x++;
