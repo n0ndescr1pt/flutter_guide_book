@@ -29,10 +29,10 @@
 - [ ] сливеры
 - [ ] работа с наитвом
 - [ ] equtable
-- [ ] isolate
+- [x] isolate
 - [ ] dropdown списки
 - [ ] logger
-- [ ] localization
+- [x] localization
 - [ ] qr code
 - [ ] maps
 - [ ] уведы
