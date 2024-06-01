@@ -40,6 +40,15 @@ isolate.kill();
 ```
 
 ### Полный код
+
+```dart
+void isolateLoop(SendPort sendPort) async {
+	while(true){
+	sendPort.send(true);
+	}
+}
+```
+
 ```dart
 import 'dart:isolate';
 import 'package:flutter/material.dart';
@@ -55,7 +64,7 @@ class _IsolateState extends State<Isolate> {
   ReceivePort _receivePort;
   Isolate _isolateLoop;
 
-  void startIsolateLoop() async {
+  void startIsolateLoop() async { // Метод который запускает изолят
     _receivePort = ReceivePort();
 	_isolateLoop = await Isolate.spawn(isolateLoop, _receivePort.sendPort);
 	//Затем для прослушивания входящих сообщений запускаем метод listen():
