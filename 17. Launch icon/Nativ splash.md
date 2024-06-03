@@ -1,0 +1,1 @@
+https://www.coderzheaven.com/2019/07/13/custom-splash-screen-in-flutter-for-android-and-ios/
