@@ -33,4 +33,4 @@ void main() {
 	delayedInit = 5; // Инициализация 
 	print(delayedInit); // Вывод: 5 
 	}
-
+```
