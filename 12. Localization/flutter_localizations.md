@@ -52,5 +52,28 @@ output-localization-file: app_localizations.dart //путь до файла ло
 Больше возможностей в [официальной документации](https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization)
 
 5. Генерация
-К сожалению, наше приложение не может читать прямиком из arb файлов, поэтому, нам нужно выполнить команду `flutter gen-l10n`, после чего будет сгенерирован файл `app_localizations.dart` (В соответствии с `l10n.yaml`). По пути `.dart_tool/flutter_gen/gen_l10n/app_localizations.dart`.
+К сожалению, наше приложение не может читать прямиком из arb файлов, поэтому, нам нужно выполнить команду `flutter gen-l10n`, после чего будет сгенерирован файл `app_localizations.dart` (В соответствии с `l10n.yaml`). По пути `.dart_tool/flutter_gen/gen_l10n/app_localizations.dart`. Её необходимо выполнять каждый раз при добавлении новых строк.
+
+#### Использование
+После того, как был сгенерирован `app_localizations.dart`, мы можем обращаться к нему, предварительно импортировав `import 'package:flutter_gen/gen_l10n/app_localizations.dart';` 
+
+Для начала, необходимо сообщить о существовании локализации.
+Прописываем это в `MaterialApp`.
+```Dart
+MaterialApp(
+	localizationsDelegates: AppLocalizations.localizationsDelegates,
+	supportedLocales: AppLocalizations.supportedLocales,
+	home: Container(),
+);
+```
+
+Теперь, чтобы получить строку пишем `AppLocalizations.of(context)!.string1`.
+Узнать текущую локализацию можно при помощи `AppLocalizations.of(context)!.localeName`.
+
+#### Заключение
+В этом гайде были рассмотрены основные функции, установка и работа библиотеки. Помимо функции локализации, библиотека помогает с выносом строк, что позитивно влияет на качество и удобство редактирования кода.
+
+
+*Артём Булаев 06.06.24*
+
 
