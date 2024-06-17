@@ -21,7 +21,7 @@
 Каждая конкретная стратегия реализует общий интерфейс своим способом.
 ```dart
  class Coding implements Activity {
-	 @Override
+	 @override
 	 void doIt(){
 		print("Coding...");
 	}
@@ -30,7 +30,7 @@
 
 ```dart
 class Reading implements Activity {
-	 @Override
+	 @override
 	 void doIt(){
 		print("Reading...");
 	}
@@ -39,7 +39,7 @@ class Reading implements Activity {
 
 ```dart
 class Sleeping implements Activity {
-	 @Override
+	 @override
 	 void doIt(){
 		print("Sleeping...");
 	}
@@ -48,7 +48,7 @@ class Sleeping implements Activity {
 
 ```dart
  class Training implements Activity {
-	 @Override
+	 @override
 	 void doIt(){
 		print("Training...");
 	}
