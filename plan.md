@@ -33,6 +33,6 @@
 - [ ] dropdown списки
 - [ ] logger
 - [x] localization
-- [ ] qr code
+- [x] qr code
 - [ ] maps
 - [ ] уведы
