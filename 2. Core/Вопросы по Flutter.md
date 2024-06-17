@@ -15,5 +15,6 @@
 
 Основные способы включают использование `InheritedWidget`, `StreamBuilder`, `FutureBuilder` или передачу нового значения через родительский виджет который является StateFulWidget.
 
-
+### Flutter под капотом
+https://habr.com/ru/articles/501862/
 
