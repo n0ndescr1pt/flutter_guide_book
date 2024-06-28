@@ -1,3 +1,8 @@
+```shell
+flutter pub add dio
+flutter pub add dio_exeptions
+flutter pub add talker_dio_logger
+```
 
 Создаем класс обертку для дио
 ```dart
