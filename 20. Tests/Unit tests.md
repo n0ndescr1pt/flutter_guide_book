@@ -53,7 +53,6 @@ when(cat.sound()).thenReturn("Meow");
 expect(cat.sound(), "Meow");
 ```
 
-
 #### Тестирование shared preferences
 
 ```dart
