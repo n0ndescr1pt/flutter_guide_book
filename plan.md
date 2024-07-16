@@ -39,4 +39,3 @@
       
       
       
-  Riverpod MVI, MVVM, MVP MVC FireBase crashlitics BLoC
